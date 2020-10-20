@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_trans">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:background="@drawable/dialog_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                >
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/ivClose"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cross"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/rr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvProductname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Product Name: Spa And Massage Bath Tub"
+                        android:background="@color/white"
+                        android:textColor="@color/grey_600"
+                        android:textSize="@dimen/_12sdp" />
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/tvAlertMsg"
+                        android:background="@color/grey_700" />
+                    <TextView
+
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:id="@+id/tvAlertMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:text="Description"
+                        android:textStyle="bold"
+                        android:background="@color/white"
+                        android:textColor="@color/grey_600"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/tvComplaints"
+                        android:textColor="@color/grey_900"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:scrollbars = "vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/rr"
+                    android:background="@color/grey_100" />
+
+
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/grey_100" />
+
+                <TextView
+                    android:id="@+id/tvOk"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@+id/view"
+                    android:layout_toStartOf="@+id/view4"
+                    android:layout_toLeftOf="@+id/view4"
+                    android:background="@color/green_600"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

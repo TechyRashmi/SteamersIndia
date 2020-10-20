@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!--
+                Add menu items here
+                Menu items with icon and Title
+        -->
+        <item
+            android:id="@+id/first"
+            android:icon="@mipmap/promotion"
+            android:title="Promotions" />
+        <item
+            android:id="@+id/second"
+            android:icon="@mipmap/evaluation"
+            android:title="Register Complaint" />
+        <item
+            android:id="@+id/third"
+            android:icon="@mipmap/feedback"
+            android:title="My Complaints" />
+
+        <item
+            android:id="@+id/servicerequest"
+            android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+            android:title="New Service Request" />
+        <item
+            android:id="@+id/allotedrequest"
+            android:icon="@drawable/ic_baseline_ballot_24"
+            android:title="Alloted Requests" />
+
+        <item
+            android:id="@+id/returnMaterial"
+            android:icon="@mipmap/feedback"
+            android:title="Return Material" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Help" />
+
+        <item
+            android:id="@+id/fourth"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Logout" />
+    </group>
+</menu>

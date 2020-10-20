@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:background="@color/white"
+        android:layout_margin="@dimen/_5sdp"
+        android:elevation="@dimen/_20sdp"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tvcomplaintno"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:text="20202020"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="21-oct-2020"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+        <TextView
+            android:id="@+id/tvStatus"
+            android:textStyle="bold"
+            android:textColor="@color/green_600"
+            android:textSize="@dimen/_11sdp"
+            android:text="Resolved"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+android:visibility="gone"
+            android:id="@+id/llInfo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:background="@drawable/ic_baseline_info_24"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp">
+
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

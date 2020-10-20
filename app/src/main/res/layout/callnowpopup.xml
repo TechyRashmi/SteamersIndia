@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_trans">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_margin="@dimen/_20sdp"
+                >
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black_trans"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_centerInParent="true"
+                        android:text="Customer Care Helpline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_margin="@dimen/_2sdp"
+                        android:id="@+id/ivClose"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cross"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"/>
+
+
+
+                </RelativeLayout>
+                <View
+                    android:layout_gravity="center"
+                    android:id="@+id/view1"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="1dp"
+                    android:background="@color/black_trans" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                  <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp">
+                    <RelativeLayout
+                        android:layout_weight=".5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/user">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_weight="1.5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="@color/black_trans"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_centerInParent="true"
+                            android:text="Contact Person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+
+                            android:textColor="@color/grey_700"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_centerInParent="true"
+                            android:text="Yusuf Limdiwala (Director)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_42sdp">
+                        <RelativeLayout
+                            android:layout_weight=".5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/phone">
+
+                            </ImageView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="vertical"
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/black_trans"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_centerInParent="true"
+                                android:text="Contact Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+
+                                android:textColor="@color/grey_700"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_centerInParent="true"
+                                android:text="+91-8048764299"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivCallNow"
+                        android:src="@drawable/callnow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
