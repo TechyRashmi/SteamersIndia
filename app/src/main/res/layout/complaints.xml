@@ -12,8 +12,6 @@
         android:layout_above="@+id/footer"
         android:layout_below="@+id/header">
 
-
-
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"

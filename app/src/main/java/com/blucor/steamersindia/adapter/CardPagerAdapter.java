@@ -21,10 +21,7 @@ public abstract class CardPagerAdapter extends PagerAdapter implements CardAdapt
 
     int [] array;
 
-
-
     protected abstract void onCategoryClick(View view, String str);
-
 
     public CardPagerAdapter(Context context,int[] resources) {
         mContext = context;
@@ -51,8 +48,6 @@ public abstract class CardPagerAdapter extends PagerAdapter implements CardAdapt
 //        Picasso.with(this.mContext).load((String) ((HashMap) this.arraylist.get(position)).get("BannerImage")).into(iv);
 
         iv.setImageDrawable(mContext.getResources().getDrawable(array[position]));
-
-
 
         cardView.setMaxCardElevation(this.mBaseElevation * ((float) this.array.length));
 
@@ -85,8 +80,6 @@ public abstract class CardPagerAdapter extends PagerAdapter implements CardAdapt
     public boolean isViewFromObject(View view, Object object) {
         return view == object;
     }
-
-
 
 
 }

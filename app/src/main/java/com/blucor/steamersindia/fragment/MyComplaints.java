@@ -182,15 +182,11 @@ public class MyComplaints extends Fragment {
                         Toasty.error(getActivity(), "Technician not Assigned yet", Toast.LENGTH_SHORT).show();
 
                     }
-
                     else
                     {
                         replaceFragmentWithAnimation(new ApproveRequest(),data.get(position).getComplaint_no());
 
                     }
-
-
-
 
                 }
             });

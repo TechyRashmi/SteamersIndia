@@ -74,11 +74,7 @@ public class ComplaintsFragment extends Fragment {
 
     View view;
 
-
-
-
     Button btnSubmit;
-
 
     LinearLayout llContainer;
 
@@ -95,7 +91,6 @@ public class ComplaintsFragment extends Fragment {
 
     TextView tvDate;
 
-
    ArrayList<Model> mArraylist=new ArrayList<>();
    ArrayList<Spinner> spinnerArrayList;
    ArrayList<TextView> textViewArrayList;
@@ -107,15 +102,12 @@ public class ComplaintsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.complaints, container, false);
 
-
         findId();
 
         spinnerArrayList=new ArrayList<>();
         textViewArrayList=new ArrayList<>();
 
-
         pref=new Preferences(getActivity());
-
         
         //Back
         view.setFocusableInTouchMode(true);
@@ -132,7 +124,6 @@ public class ComplaintsFragment extends Fragment {
                 return false;
             }
         });
-
 
         rrDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -185,7 +176,6 @@ public class ComplaintsFragment extends Fragment {
                else if(count==0)
                 {
                     Toasty.warning(getActivity(), "Select Atleast one problem", Toast.LENGTH_SHORT).show();
-
                 }
 
                else if(tvDate.getText().toString().trim().equalsIgnoreCase("Select Date"))
@@ -221,10 +211,8 @@ public class ComplaintsFragment extends Fragment {
                     }
                 }
 
-
             }
         });
-
 
         DrawerActivity.tvHeaderText.setText("Register Complaint");
 
@@ -233,7 +221,6 @@ public class ComplaintsFragment extends Fragment {
 
         if (Utils.isNetworkConnectedMainThred(getActivity())) {
             loader.show();
-
 
             String url = getString(R.string.API_URL) + "getUserproducts.php";
             HitGetProductApi(url,pref.get(Constants.id));
@@ -339,11 +326,7 @@ public class ComplaintsFragment extends Fragment {
 
                     try {
                     JSONArray jsonArray=new JSONArray(response);
-
-
                         //llContainer.removeView((View) addView.getParent());
-
-
                         if(jsonArray.length()!=0)
                     {
 
@@ -353,7 +336,6 @@ public class ComplaintsFragment extends Fragment {
 
                             //inflating layout dynamically
 
-
                             LayoutInflater layoutInflater =
                                     (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                             final View addView = layoutInflater.inflate(R.layout.inflate, null);
@@ -361,7 +343,6 @@ public class ComplaintsFragment extends Fragment {
                             TextView tvProblem=addView.findViewById(R.id.tvProblem);
                             tvProblem.setText(object.getString("check_list"));
                             Spinner spinner=addView.findViewById(R.id.spYesno);
-
 
                             llContainer.addView(addView);
                             spinnerArrayList.add(spinner);

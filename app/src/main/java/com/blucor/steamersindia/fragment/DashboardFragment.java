@@ -135,8 +135,6 @@ public class DashboardFragment extends Fragment  implements View.OnClickListener
          llReturnItems.setOnClickListener(this);
 
 
-
-
         //check condition
         if(pref.get(Constants.role).equalsIgnoreCase("user"))
         {
@@ -149,7 +147,6 @@ public class DashboardFragment extends Fragment  implements View.OnClickListener
             llAllotedRequest.setVisibility(View.GONE);
             llReturnItems.setVisibility(View.GONE);
 
-
             if (Utils.isNetworkConnectedMainThred(getActivity())) {
                 loader.show();
                 String URL = getString(R.string.API_URL) + "checkfeedback.php";
@@ -158,6 +155,7 @@ public class DashboardFragment extends Fragment  implements View.OnClickListener
                 Toasty.warning(getActivity(), "No Internet Connection!", Toast.LENGTH_SHORT).show();
             }
         }
+
         else
         {
             llServiceComplaint.setVisibility(View.GONE);

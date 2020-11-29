@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/llMain"
+        android:background="@color/white"
+        android:elevation="@dimen/_1sdp"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:id="@+id/tvPartName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:text="NutBolt"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvCapacity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2 KW"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+        <TextView
+            android:id="@+id/tvSize"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:text="2 Relay"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tvQty"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:text="3"
+            android:gravity="center"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+
+        <RelativeLayout
+            android:background="@drawable/rectangle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:background="@null"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/etQty"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
